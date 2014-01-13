@@ -1,0 +1,14 @@
+<div class="single-form-container">
+  <%= form_for @episode do |f| %>
+    <div class="boxed-group">
+      <h3>Create New Episode</h3>
+      <div class="boxed-group-inner">
+        <dl class="form">
+          <dt><%= f.label :asset_url %></dt>
+          <dd><%= f.text_field :asset_url %></dd>
+        </dl>
+        <p><%= f.submit "Save", :class => "button primary" %></p>
+      </div>
+    </div>
+  <% end %>
+</div>

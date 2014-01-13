@@ -1,0 +1,23 @@
+@import "globals/variables";
+@import "globals/mixins";
+
+.fake-screen {
+  position: relative;
+  width: 800px;
+  height: 600px;
+  border: 1px solid black;
+  margin: 20px auto;
+  .asset_url {
+    line-height: 600px;
+    text-align: center;
+    color: $light-blue;
+    font-size: 140%;
+    font-weight: bold;
+  }
+  .duration {
+    position: absolute;
+    font-size: 120%;
+    top: 5px;
+    right: 5px;
+  }
+}
